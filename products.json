@@ -1,0 +1,190 @@
+{
+    "data": [
+        {
+            "products_id": 1,
+            "products_name": "Suéter Vintage",
+            "products_description": "Mergulhe na nostalgia e adicione um toque de charme retrô ao seu guarda-roupa com nosso exclusivo suéter vintage. Feito com um tecido macio e aconchegante, este suéter não apenas oferece conforto, mas também traz um estilo atemporal que nunca sai de moda.",
+            "products_price": "79,99",
+            "products_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/sueter_destaque.jpg",
+            "products_category": 2,
+            "sizes": [
+                {
+                    "sizes_id": 1,
+                    "sizes_name": "P"
+                },
+                {
+                    "sizes_id": 2,
+                    "sizes_name": "G"
+                }
+            ],
+            "colors": [
+                {
+                    "colors_id": 1,
+                    "colors_name": "#ff3026"
+                },
+                {
+                    "colors_id": 3,
+                    "colors_name": "#90464A"
+                },
+                {
+                    "colors_id": 3,
+                    "colors_name": "#F3727A"
+                }
+            ],
+            "images": [
+                {
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/59534.jpg"
+                },
+                {
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/59525.jpg"
+                },
+                {
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/59346.jpg"
+                },
+                {
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/59251.jpg"
+                },
+                {
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/59188.jpg"
+                },
+                {
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/59182.jpg"
+                },
+                {
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/59178.jpg"
+                },
+                {
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/2147704075.png"
+                },
+                {
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/59181.jpg"
+                }
+            ]
+        },
+        {
+            "products_id": 2,
+            "products_name": "Jaqueta Jeans",
+            "products_description": "",
+            "products_price": "179,99",
+            "products_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jeans_destaque.png",
+            "products_category": 2,
+            "sizes": [
+                {
+                    "sizes_id": 1,
+                    "sizes_name": "P"
+                }
+            ],
+            "colors": [
+                {
+                    "colors_id": 2,
+                    "colors_name": "#7da8d0"
+                }
+            ],
+            "images": [
+                {
+                    "images_url": "sueter1"
+                }
+            ]
+        },
+        {
+            "products_id": 3,
+            "products_name": "Jaqueta Sweet",
+            "products_description": "",
+            "products_price": "129,99",
+            "products_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jaqueta_destaque.png",
+            "products_category": 2,
+            "sizes": [
+                {
+                    "sizes_id": 1,
+                    "sizes_name": "P"
+                }
+            ],
+            "colors": [
+                {
+                    "colors_id": 1,
+                    "colors_name": "#ff3026"
+                }
+            ],
+            "images": [
+                {
+                    "images_url": "sueter1"
+                }
+            ]
+        },
+        {
+            "products_id": 4,
+            "products_name": "Jaqueta Couro",
+            "products_description": "",
+            "products_price": "229,99",
+            "products_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jaqueta_destaque3.png",
+            "products_category": 2,
+            "sizes": [
+                {
+                    "sizes_id": 1,
+                    "sizes_name": "P"
+                }
+            ],
+            "colors": [
+                {
+                    "colors_id": 2,
+                    "colors_name": "#7da8d0"
+                }
+            ],
+            "images": [
+                {
+                    "images_url": "sueter1"
+                }
+            ]
+        },
+        {
+            "products_id": 5,
+            "products_name": "Suéter Classic",
+            "products_description": "",
+            "products_price": "99,99",
+            "products_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/sueter_destaque2.png",
+            "products_category": 2,
+            "sizes": [
+                {
+                    "sizes_id": 1,
+                    "sizes_name": "P"
+                }
+            ],
+            "colors": [
+                {
+                    "colors_id": 1,
+                    "colors_name": "#ff3026"
+                }
+            ],
+            "images": [
+                {
+                    "images_url": "sueter1"
+                }
+            ]
+        },
+        {
+            "products_id": 6,
+            "products_name": "Blazer Feminino",
+            "products_description": "",
+            "products_price": "179,99",
+            "products_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jaqueta_destaque2.png",
+            "products_category": 2,
+            "sizes": [
+                {
+                    "sizes_id": 1,
+                    "sizes_name": "P"
+                }
+            ],
+            "colors": [
+                {
+                    "colors_id": 2,
+                    "colors_name": "#7da8d0"
+                }
+            ],
+            "images": [
+                {
+                    "images_url": "sueter1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "favorites": [
+        {
+            "id": "1",
+            "name": "Jaqueta Jeans",
+            "price": "R$37.90",
+            "sizes": ["P", "M", "G"],
+            "colors": ["rgb(190,65,65)", "rgb(84, 110, 182)", "rgb(175, 123, 73)"],
+            "image": "jeans_destaque.png"
+        },
+        {
+            "id": "2",
+            "name": "Suéter Rosa",
+            "price": "R$35.90",
+            "sizes": ["P", "M"],
+            "colors": ["rgb(190,65,65)", "rgb(84, 110, 182)", "rgb(61, 135, 72)", "rgb(175, 123, 73)"],
+            "image": "sueter_destaque2.png"
+        },
+        {
+            "id": "3",
+            "name": "Suéter Cinza",
+            "price": "R$45.90",
+            "sizes": ["P", "M", "G", "GG"],
+            "colors": ["rgb(190,65,65)", "rgb(84, 110, 182)", "rgb(61, 135, 72)", "rgb(175, 123, 73)"],
+            "image": "jaqueta_destaque.png"
+        }
+    ]
+}

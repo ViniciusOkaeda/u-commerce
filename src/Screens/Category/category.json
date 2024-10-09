@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "products_category_id": 1,
+            "category_name": "Tênis",
+            "category_description": "Diversos tênis e várias marcas disponíveis.",
+            "category_image": "https://github.com/ViniciusOkaeda/e-commerce-ra-mobile/blob/main/src/Assets/tenis.png?raw=true"
+        },
+        {
+            "products_category_id": 2,
+            "category_name": "Camisetas",
+            "category_description": "Diversas camisetas e várias marcas disponíveis.",
+            "category_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/camiseta.png"
+        },
+        {
+            "products_category_id": 3,
+            "category_name": "Chapéus",
+            "category_description": "Diversos chapeus e várias marcas disponíveis.",
+            "category_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/chapeu.png"
+        },
+        {
+            "products_category_id": 5,
+            "category_name": "Bonés",
+            "category_description": "Diversos bonés e várias marcas disponíveis.",
+            "category_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/bone.png"
+        },
+        {
+            "products_category_id": 4,
+            "category_name": "Calças",
+            "category_description": "Diversas calças e várias marcas disponíveis.",
+            "category_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jeans.png"
+        },
+        {
+            "products_category_id": 6,
+            "category_name": "Gorros",
+            "category_description": "Diversos gorros e várias marcas disponíveis.",
+            "category_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/gorro.png"
+        }
+
+    ]
+}
