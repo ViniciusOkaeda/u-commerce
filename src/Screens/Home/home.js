@@ -63,7 +63,7 @@ const HomeScreen = ({navigation}) => {
       {/* Imagem abaixo do carousel */}
       <View style={styles.bottomImageContainer}>
         <Image
-          source={{ uri: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/supersale.png' }} // Insira o URL da imagem desejada
+          source={{ uri: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/saleinit.png' }} // Insira o URL da imagem desejada
           style={styles.bottomImage}
         />
       </View>
@@ -83,7 +83,7 @@ const HomeScreen = ({navigation}) => {
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{ paddingHorizontal: 10 }} // Espaçamento entre os itens
           onViewableItemsChanged={onViewableItemsChanged} // Detecta o item visível
-          viewabilityConfig={{ itemVisiblePercentThreshold: 0 }} // Definição de visibilidade do item (50% da imagem visível)
+          viewabilityConfig={{ itemVisiblePercentThreshold: 50 }} // Definição de visibilidade do item (50% da imagem visível)
         />
         {/* Indicador de página */}
         <View style={styles.indicatorContainer}>
@@ -225,9 +225,12 @@ const styles = StyleSheet.create({
     paddingTop: 20,
   },
   bottomImage: {
-    width: '100%',
-    height: 150, // Altura ajustada da imagem
+    marginTop: 10,
+    borderRadius: 10,
+    width: '95%', // Ajusta a largura da imagem para 90% da largura da tela
+    height: 180, // Altura ajustada da imagem
     resizeMode: 'cover', // Ajuste para manter a proporção
+    alignSelf: 'center', // Centraliza a imagem horizontalmente
   },
   bottomImage2: {
     width: '100%',

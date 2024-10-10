@@ -49,6 +49,9 @@ export default function App() {
           {() => (
             <HomeStack.Navigator screenOptions={stackScreenOptions}>
               <HomeStack.Screen name="Home" component={HomeScreen} />
+              <HomeStack.Screen name="Detalhes do Produto" 
+              component={ProductScreen}  />
+              <HomeStack.Screen name="Experimente seu Produto" component={ARSceneEcommerce} />
             </HomeStack.Navigator>
           )}
         </Tab.Screen>
