@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { StyleSheet, Text, View, Image, FlatList, TouchableOpacity, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Image, FlatList, TouchableOpacity, Dimensions, ScrollView } from 'react-native';
 import customData from "../../../../products.json";
 import Icon from 'react-native-vector-icons/AntDesign';
 
@@ -63,7 +63,7 @@ const ProductsByCategory = ({ route, navigation }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
       {/* Texto acima do carousel */}
       <View style={styles.textAboveCarousel}>
         <Text style={styles.carouselTitle}>As melhores condições para você!</Text>
@@ -113,7 +113,7 @@ const ProductsByCategory = ({ route, navigation }) => {
         columnWrapperStyle={styles.columnWrapper}
         contentContainerStyle={styles.contentContainer}
       />
-    </View>
+    </ScrollView>
   );
 };
 
@@ -123,10 +123,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#f2f2f2',
     height: "100%",
   },
+  contentContainer: {
+    paddingBottom: 80, // Espaço adicional no final para evitar que o conteúdo grude no final da tela
+  },
   textAboveCarousel: {
     marginTop: 20, // Margem superior
     alignItems: 'flex-start', // Alinha à esquerda
     justifyContent: 'center',
+    marginBottom: 10,
     paddingLeft: 20, // Adiciona espaçamento à esquerda para alinhar com os cards
   },
   carouselTitle: {
@@ -139,7 +143,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 20,
-    marginTop: 10, // Margem superior para o carousel
   },
   carouselItem: {
     justifyContent: 'center',
@@ -218,12 +221,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingBottom: 0,
     paddingTop: 20,
-  },
-  contentContainer: {
-    paddingBottom: 80,
-  },
-  bottomImageContainer: {
-    marginTop: 0, // Margem superior da imagem abaixo do carousel
   },
   bottomImage: {
     width: '100%',

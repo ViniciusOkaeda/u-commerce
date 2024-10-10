@@ -24,10 +24,16 @@ import {
         <ViroSpotLight innerAngle={5} outerAngle={90} direction={[0, -1, -.2]} position={[0, 3, 1]} color="#ffffff" castsShadow={true} />
         <ViroNode position={[0, 0, -1]} dragType="FixedToWorld" onDrag={() => { }} >
           <Viro3DObject
-            source={require('../../../res/Black-shoe.obj')}
-            resources={[require('../../../res/Black_shoe.mtl')]}
+                    source={{
+                      uri: "https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/res/Black-shoe.obj", // URL do arquivo .obj
+                    }}
+
+                    resources={[
+                      { uri: "https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/res/Black_shoe.mtl" }, // URL do arquivo .mtl (material)
+                    ]}
+
             position={[0, .1, 0]}
-            scale={[.03, .03, .03]}
+            scale={[.02, .02, .02]}
             type="OBJ"
           />
         </ViroNode>

@@ -1,0 +1,138 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 17.07.2022 21:00:19
+
+newmtl Sleeve_Right
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Right Sleeve\Right Sleeve_Diffuse.jpg
+	map_Kd I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Right Sleeve\Right Sleeve_Diffuse.jpg
+	map_bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Right Sleeve\Right Sleeve_Normal.jpg
+	bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Right Sleeve\Right Sleeve_Normal.jpg
+
+newmtl Front
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Diffuse.jpg
+	map_Kd I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Diffuse.jpg
+	map_bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Normal.jpg
+	bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Normal.jpg
+
+newmtl Back
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Back\Shirt Back_Diffuse.jpg
+	map_Kd I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Back\Shirt Back_Diffuse.jpg
+	map_bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Back\Shirt Back_Normal.jpg
+	bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Back\Shirt Back_Normal.jpg
+
+newmtl Sleeve_Left
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Left Sleeve\Left Sleeve_Diffuse.jpg
+	map_Kd I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Left Sleeve\Left Sleeve_Diffuse.jpg
+	map_bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Left Sleeve\Left Sleeve_Normal.jpg
+	bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Left Sleeve\Left Sleeve_Normal.jpg
+
+newmtl Shirt_Middle_Boundry
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Diffuse.jpg
+	map_Kd I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Diffuse.jpg
+	map_bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Normal.jpg
+	bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Normal.jpg
+
+newmtl Cuffs_Boundry
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Base Textures\Shirt Texture Black_Diffuse.jpg
+	map_Kd I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Base Textures\Shirt Texture Black_Diffuse.jpg
+	map_bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Base Textures\Shirt Texture Black_Normal.jpg
+	bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Base Textures\Shirt Texture Black_Normal.jpg
+
+newmtl Pockert_Boundry
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Diffuse.jpg
+	map_Kd I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Diffuse.jpg
+	map_bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Normal.jpg
+	bump I:\3D Models For Sales\Outfits\Shirt\Custom Textures\Shirt Custom Textures\Shirt Front\Shirt Front_Normal.jpg
+
+newmtl Bottons
+	Ns 32.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0392 0.0431 0.0431
+	Kd 0.0392 0.0431 0.0431
+	Ks 0.7920 0.7920 0.7920
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Bottons_Threads
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0549 0.0706 0.0706
+	Kd 0.0549 0.0706 0.0706
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
