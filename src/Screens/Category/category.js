@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, FlatList, ImageBackground, TouchableOpacity, Dimensions, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image, FlatList, TouchableOpacity, Dimensions, ScrollView, ImageBackground } from 'react-native';
 import customData from "./category.json";
 
 const screenWidth = Dimensions.get('window').width;
@@ -12,16 +12,15 @@ const CategoryScreen = ({ navigation }) => {
         style={styles.itemContainer}
         onPress={() => navigation.navigate('Produtos da Categoria', { itemId: item.products_category_id, itemName: item.category_name })}
       >
-                <ImageBackground
-          source={{ uri: 'https://placekitten.com/500/500' }} // Substitua pela URL da sua imagem
-          style={styles.imageBackground}
-          imageStyle={styles.image}
+        <ImageBackground 
+          source={{ uri: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/fashion2.png' }} // URL da imagem de fundo
+          style={styles.imageBackground} // Estilo para fazer a imagem ocupar 100% do TouchableOpacity
+          imageStyle={styles.image} // Garantir que a imagem seja corretamente dimensionada
         >
-        <View style={styles.innerContainer}>
-          <Image style={styles.image} source={{ uri: item.category_image }} />
-          <Text style={styles.text}>{item.category_name}</Text>
-        </View>
-
+          <View style={styles.innerContainer}>
+            <Image style={styles.imageArray} source={{ uri: item.category_image }} />
+            <Text style={styles.text}>{item.category_name}</Text>
+          </View>
         </ImageBackground>
       </TouchableOpacity>
     );
@@ -29,12 +28,14 @@ const CategoryScreen = ({ navigation }) => {
 
   return (
     <ScrollView style={styles.container}>
-      {/* Imagem no topo da tela */}
-      <Image
-        source={{ uri: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/bfday_bgd.png' }} // URL da imagem
-        style={styles.responsiveImage}
-        resizeMode="contain" // Garantir que a imagem se ajuste corretamente
-      />
+      {/* Contêiner para centralizar a imagem responsiva */}
+      <View style={styles.imageContainer}>
+        <Image
+          source={{ uri: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/bfday_bgd.png' }} // URL da imagem
+          style={styles.responsiveImage}
+           // Garantir que a imagem se ajuste corretamente
+        />
+      </View>
 
       {/* FlatList que exibe os itens abaixo da imagem */}
       <FlatList
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
   columnWrapper: {
     justifyContent: 'space-between', // Espaçar os itens na linha
     paddingHorizontal: 10, // Espaçamento lateral
-    paddingTop: 80
+    paddingTop: 10
   },
   contentContainer: {
     paddingBottom: 80, // Espaço adicional no final da lista para evitar que o último item fique grudado no menu inferior
@@ -65,11 +66,9 @@ const styles = StyleSheet.create({
   itemContainer: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#fff',
-    bacgroundImage: '../../',
+    backgroundColor: 'transparent', // Não precisa de cor de fundo aqui, pois a imagem será o fundo
     borderRadius: 5,
-    height: 110,
-    padding: 10, // Padding ao redor dos itens
+    height: 210,
     shadowColor: "#444444",
     shadowOffset: {
       width: 0,
@@ -80,29 +79,49 @@ const styles = StyleSheet.create({
     elevation: 1,
     marginHorizontal: 5, // Espaço entre os itens na mesma linha
   },
-  innerContainer: {
+  imageBackground: {
     flex: 1,
-    justifyContent: 'center', // Centraliza o conteúdo verticalmente
-    alignItems: 'center', // Centraliza o conteúdo horizontalmente
-    padding: 5, // Padding ao redor dos itens
+    width: '100%', // A imagem vai ocupar 100% da largura do TouchableOpacity
+    height: '100%', // A imagem vai ocupar 100% da altura do TouchableOpacity
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5, // Borda arredondada (opcional)
+  },
+  image: {
+    borderRadius: 10, // Borda arredondada (opcional)
+    resizeMode: 'cover', // Faz com que a imagem cubra toda a área do componente sem deformá-la
+  },
+  imageArray: {
+    width: 150,
+    height: 150,
+    backgroundColor: 'rgba(255,255,255, 0.6)',
+    borderRadius: 80,
+    marginBottom: 20
+  },
+  innerContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1,
+    padding: 5, // Padding ao redor do conteúdo
+  },
+  imageContainer: {
+    alignItems: 'center', // Centraliza horizontalmente
+    justifyContent: 'center', // Centraliza verticalmente
+    marginTop: 10,
+
   },
   responsiveImage: {
-    marginTop: -40,
-    width: screenWidth, // Largura da imagem igual à largura da tela
-    height: 300, // Definindo altura fixa, ou pode ser ajustado proporcionalmente
-    resizeMode: 'contain', // Para garantir que a imagem mantenha sua proporção
+    width: screenWidth - 20, // Largura da imagem igual à largura da tela
+    height: 200, // Definindo altura fixa, ou pode ser ajustado proporcionalmente
+    borderRadius: 20
   },
   text: {
     fontSize: 18,
-    marginTop: -50,
     fontWeight: 'bold',
-    color: '#444'
-  },
-  image: {
-    marginTop: -100,
-    width: 150, // Ajuste conforme necessário
-    height: 180, // Ajuste conforme necessário
-    marginBottom: 40
+    color: 'white', // Cor branca para o texto, para garantir contraste com a imagem
+    textShadowColor: 'rgba(0, 0, 0, 0.5)', // Sombras para tornar o texto mais legível
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 5,
   },
 });
 
