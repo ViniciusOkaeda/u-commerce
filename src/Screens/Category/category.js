@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, FlatList, TouchableOpacity, Dimensions, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image, FlatList, ImageBackground, TouchableOpacity, Dimensions, ScrollView } from 'react-native';
 import customData from "./category.json";
 
 const screenWidth = Dimensions.get('window').width;
@@ -12,10 +12,17 @@ const CategoryScreen = ({ navigation }) => {
         style={styles.itemContainer}
         onPress={() => navigation.navigate('Produtos da Categoria', { itemId: item.products_category_id, itemName: item.category_name })}
       >
+                <ImageBackground
+          source={{ uri: 'https://placekitten.com/500/500' }} // Substitua pela URL da sua imagem
+          style={styles.imageBackground}
+          imageStyle={styles.image}
+        >
         <View style={styles.innerContainer}>
           <Image style={styles.image} source={{ uri: item.category_image }} />
           <Text style={styles.text}>{item.category_name}</Text>
         </View>
+
+        </ImageBackground>
       </TouchableOpacity>
     );
   };
@@ -59,6 +66,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     backgroundColor: '#fff',
+    bacgroundImage: '../../',
     borderRadius: 5,
     height: 110,
     padding: 10, // Padding ao redor dos itens
