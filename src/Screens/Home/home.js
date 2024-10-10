@@ -60,7 +60,7 @@ const HomeScreen = ({navigation}) => {
  
     return(
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-      {/* Imagem abaixo do carousel */}
+      {/* Imagem acima do carousel */}
       <View style={styles.bottomImageContainer}>
         <Image
           source={{ uri: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/saleinit.png' }} // Insira o URL da imagem desejada
