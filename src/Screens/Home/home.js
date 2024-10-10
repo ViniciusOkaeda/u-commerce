@@ -8,12 +8,10 @@ const HomeScreen = ({navigation}) => {
   
   // Array de imagens para o carousel
   const images = [
-    { url: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/promo1.png' },
-    { url: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/promo2.png' },
-    { url: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/promo3.png' },
-    { url: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/promo4.png' },
-    { url: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/promo5.png' },
-    { url: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/promo6.png' },
+    { url: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/offer1.png' },
+    { url: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/offer2.png' },
+    { url: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/offer3.png' },
+    { url: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/offer4.png' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0); // Estado para controlar o índice da imagem atual
@@ -62,9 +60,16 @@ const HomeScreen = ({navigation}) => {
  
     return(
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+      {/* Imagem abaixo do carousel */}
+      <View style={styles.bottomImageContainer}>
+        <Image
+          source={{ uri: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/supersale.png' }} // Insira o URL da imagem desejada
+          style={styles.bottomImage}
+        />
+      </View>
       {/* Texto acima do carousel */}
       <View style={styles.textAboveCarousel}>
-        <Text style={styles.carouselTitle}>As melhores condições para você!</Text>
+        <Text style={styles.carouselTitle}>Condições especiais para você!</Text>
       </View>
 
       {/* Carousel de imagens */}
@@ -76,9 +81,9 @@ const HomeScreen = ({navigation}) => {
           renderItem={renderCarouselItem}
           keyExtractor={(item, index) => index.toString()}
           showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{ paddingHorizontal: 20 }} // Espaçamento entre os itens
+          contentContainerStyle={{ paddingHorizontal: 10 }} // Espaçamento entre os itens
           onViewableItemsChanged={onViewableItemsChanged} // Detecta o item visível
-          viewabilityConfig={{ itemVisiblePercentThreshold: 50 }} // Definição de visibilidade do item (50% da imagem visível)
+          viewabilityConfig={{ itemVisiblePercentThreshold: 0 }} // Definição de visibilidade do item (50% da imagem visível)
         />
         {/* Indicador de página */}
         <View style={styles.indicatorContainer}>
@@ -95,10 +100,10 @@ const HomeScreen = ({navigation}) => {
       </View>
 
       {/* Imagem abaixo do carousel */}
-      <View style={styles.bottomImageContainer}>
+      <View style={styles.bottomImageContainer2}>
         <Image
-          source={{ uri: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/sale_img.png' }} // Insira o URL da imagem desejada
-          style={styles.bottomImage}
+          source={{ uri: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/supersale.png' }} // Insira o URL da imagem desejada
+          style={styles.bottomImage2}
         />
       </View>
 
@@ -137,18 +142,17 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   carouselContainer: {
-    height: 200, // Altura do carousel
+    height: 280, // Altura do carousel
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 20,
   },
   carouselItem: {
     justifyContent: 'center',
     alignItems: 'center',
   },
   carouselImage: {
-    height: 200,
-    width: '100%', // Ajusta a largura da imagem ao tamanho do item
+    height: 280,
+    width: 340, // Ajusta a largura da imagem ao tamanho do item
     borderRadius: 10,
     resizeMode: 'cover', // Ajusta a imagem ao tamanho do container sem distorção
   },
@@ -224,6 +228,12 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 150, // Altura ajustada da imagem
     resizeMode: 'cover', // Ajuste para manter a proporção
+  },
+  bottomImage2: {
+    width: '100%',
+    height: 90, // Altura ajustada da imagem
+    resizeMode: 'cover', // Ajuste para manter a proporção
+    marginTop: 20
   },
 });
 
