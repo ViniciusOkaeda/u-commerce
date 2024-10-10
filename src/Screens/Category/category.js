@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
   imageArray: {
     width: 150,
     height: 150,
-    backgroundColor: 'rgba(255,255,255, 0.6)',
+    backgroundColor: 'rgba(255,255,255, 0.4)',
     borderRadius: 80,
     marginBottom: 20
   },
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   responsiveImage: {
     width: screenWidth - 20, // Largura da imagem igual à largura da tela
     height: 200, // Definindo altura fixa, ou pode ser ajustado proporcionalmente
-    borderRadius: 20
+    borderRadius: 10
   },
   text: {
     fontSize: 18,
