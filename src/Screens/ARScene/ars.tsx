@@ -24,8 +24,8 @@ import {
         <ViroSpotLight innerAngle={5} outerAngle={90} direction={[0, -1, -.2]} position={[0, 3, 1]} color="#ffffff" castsShadow={true} />
         <ViroNode position={[0, 0, -1]} dragType="FixedToWorld" onDrag={() => { }} >
           <Viro3DObject
-            source={require('./res/Black-shoe.obj')}
-            resources={[require('./res/Black_shoe.mtl')]}
+            source={require('../../../res/Black-shoe.obj')}
+            resources={[require('../../../res/Black_shoe.mtl')]}
             position={[0, .1, 0]}
             scale={[.03, .03, .03]}
             type="OBJ"

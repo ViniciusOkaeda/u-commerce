@@ -6,6 +6,9 @@ import CategoryScreen from './src/Screens/Category/category';
 import FavoriteScreen from './src/Screens/Favorite/favorite';
 import ProductScreen from './src/Screens/Product/product';
 import ProductsByCategory from './src/Screens/Category/Products/products';
+import ARSceneEcommerce from './src/Screens/ARScene/ars';
+import Icon from 'react-native-vector-icons/AntDesign';
+
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -38,7 +41,9 @@ export default function App() {
         <Tab.Screen
           name="Home"
           options={{
-            tabBarLabel: 'Home', // Nome da aba sem ícone
+            tabBarLabel: 'Home',
+            tabBarIcon: ({ color, size }) => (
+              <Icon name="dingding" color={color} size={size} />            ), // Nome da aba sem ícone
           }}
         >
           {() => (
@@ -52,18 +57,25 @@ export default function App() {
         <Tab.Screen
           name="Category"
           options={{
-            tabBarLabel: 'Category', // Nome da aba sem ícone
+            tabBarLabel: 'Categorias', // Nome da aba 
+            tabBarIcon: ({ color, size }) => (
+              <Icon name="appstore1" color={color} size={size} />            ), 
           }}
         >
           {() => (
             <CategoryStack.Navigator screenOptions={stackScreenOptions}>
-              <CategoryStack.Screen name="Category" component={CategoryScreen} />
+              <CategoryStack.Screen name="Categoria de Produtos" component={CategoryScreen} />
               <CategoryStack.Screen
-                name="ProductsByCategory"
+                name="Produtos da Categoria"
                 component={ProductsByCategory}
                 options={{ headerBackTitleVisible: false }} // Hide back button text
               />
-              <CategoryStack.Screen name="Product" component={ProductScreen} />
+              <CategoryStack.Screen 
+              name="Detalhes do Produto" 
+              component={ProductScreen} 
+              />
+              <CategoryStack.Screen name="Experimente seu Produto" component={ARSceneEcommerce} 
+              />
             </CategoryStack.Navigator>
           )}
         </Tab.Screen>
@@ -72,29 +84,18 @@ export default function App() {
         <Tab.Screen
           name="Favorite"
           options={{
-            tabBarLabel: 'Favorite', // Nome da aba sem ícone
+            tabBarLabel: 'Favoritos', // Nome da aba
+            tabBarIcon: ({ color, size }) => (
+              <Icon name="heart" color={color} size={size} />            ), 
           }}
         >
           {() => (
             <FavoriteStack.Navigator screenOptions={stackScreenOptions}>
-              <FavoriteStack.Screen name="Favorite" component={FavoriteScreen} />
+              <FavoriteStack.Screen name="Meus Favoritos" component={FavoriteScreen} />
             </FavoriteStack.Navigator>
           )}
         </Tab.Screen>
 
-        {/* Profile Tab */}
-        <Tab.Screen
-          name="Profile"
-          options={{
-            tabBarLabel: 'Profile', // Nome da aba sem ícone
-          }}
-        >
-          {() => (
-            <ProfileStack.Navigator screenOptions={stackScreenOptions}>
-              <ProfileStack.Screen name="Profile" component={ProfileScreen} />
-            </ProfileStack.Navigator>
-          )}
-        </Tab.Screen>
       </Tab.Navigator>
     </NavigationContainer>
   );

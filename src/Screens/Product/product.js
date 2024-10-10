@@ -89,7 +89,11 @@ const ProductScreen = ({ route, navigation }) => {
             </View>
 
             <View style={styles.tryProductContainer}>
-              <TouchableOpacity style={styles.tryProductButton}>
+              <TouchableOpacity style={styles.tryProductButton}
+                onPress={() => {
+                  navigation.navigate('Experimente seu Produto', { itemId: item.products_id, categoryItemId: item.products_category })
+                }}
+              >
                 <Text style={styles.tryProductText}>Provar Produto</Text>
               </TouchableOpacity>
 
@@ -176,7 +180,7 @@ const styles = StyleSheet.create({
     color: '#333',
     fontWeight: 'bold',
   },
-  tryProductContainer:{
+  tryProductContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",

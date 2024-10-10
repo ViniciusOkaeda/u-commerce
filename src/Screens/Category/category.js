@@ -8,7 +8,7 @@ const CategoryScreen = ({ navigation }) => {
     return(
       <TouchableOpacity 
       style={styles.itemContainer}
-      onPress={() => navigation.navigate('ProductsByCategory', { itemId: item.products_category_id, itemName: item.category_name })}
+      onPress={() => navigation.navigate('Produtos da Categoria', { itemId: item.products_category_id, itemName: item.category_name })}
       >
 
         <View style={styles.innerContainer}>

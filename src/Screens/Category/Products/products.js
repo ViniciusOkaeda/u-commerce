@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, FlatList, TouchableOpacity } from 'react-native';
 import customData from "../../../../products.json";
+import Icon from 'react-native-vector-icons/AntDesign';
 
 const ProductsByCategory = ({ route, navigation }) => {
   const { itemId } = route.params; // Obtém o parâmetro enviado
@@ -13,7 +14,7 @@ const ProductsByCategory = ({ route, navigation }) => {
       <TouchableOpacity 
       style={styles.itemContainer}
       onPress={() => {
-        navigation.navigate('Product', { itemId: item.products_id, categoryItemId: item.products_category })      
+        navigation.navigate('Detalhes do Produto', { itemId: item.products_id, categoryItemId: item.products_category })      
       } }
       >
         <View style={styles.containerImage}>
@@ -21,10 +22,8 @@ const ProductsByCategory = ({ route, navigation }) => {
           uri: item.products_image,
         }}  />
             <TouchableOpacity style={styles.containerImageFavoriteButton}>
-            {/*
-            <AntDesign name="heart" color={'#628DB4'} size={16} />
+            <Icon name="heart" size={16} color="#628DB4" /> 
             
-            */} 
             </TouchableOpacity>
         </View>
 
@@ -68,7 +67,7 @@ const styles = StyleSheet.create({
     },
     itemContainer: {
       flex: 1,
-      height: 270,
+      height: 320,
       alignItems: 'center',
       borderRadius: 8,
       marginBottom: 0, // Espaço entre as linhas

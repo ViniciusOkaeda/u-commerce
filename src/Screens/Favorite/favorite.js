@@ -4,6 +4,8 @@ import favoriteData from './favorite.json';
 import JeansDestaque from "../../Assets/jeans_destaque.png";
 import SueterDestaque2 from '../../Assets/sueter_destaque2.png';
 import JaquetaDestaque from '../../Assets/jaqueta_destaque.png';
+import Icon from 'react-native-vector-icons/AntDesign';
+
 
 const imageMap = {
     "jeans_destaque.png": JeansDestaque,
@@ -35,12 +37,7 @@ const FavoriteScreen = ({ navigation }) => {
                     </View>
                 </View>
                 <TouchableOpacity style={styles.favoriteButton}>
-                    {
-                        /*
-                         
-                        <AntDesign name="heart" size={17} color="#628DB4" />
-                         */
-                    }
+                    <Icon name="heart" size={16} color="#628DB4" /> 
                 </TouchableOpacity>
             </View>
         </TouchableOpacity>
