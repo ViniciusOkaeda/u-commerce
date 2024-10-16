@@ -25,11 +25,11 @@ const ARSceneEcommerce = () => {
       <ViroNode position={[0, 0, -1]} dragType="FixedToWorld" onDrag={() => { }} >
         <Viro3DObject
           source={{
-            uri: "https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/res/Black-shoe.obj", // URL do arquivo .obj
+            uri: "./res/white-shirt.obj", // URL do arquivo .obj
           }}
 
           resources={[
-            { uri: "https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/res/Black_shoe.mtl" }, // URL do arquivo .mtl (material)
+            { uri: "./res/white-shirt.mtl" }, // URL do arquivo .mtl (material)
           ]}
 
           position={[0, .1, 0]}
