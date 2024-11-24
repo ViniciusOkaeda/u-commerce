@@ -6,7 +6,7 @@ const { height, width } = Dimensions.get('window');
 
 const InfoScreen = () => {
   const items = [
-    { id: 1, text: 'Para provar os produtos, siga as orientações à seguir: ', imageUrl: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/161.jpg' },
+    { id: 1, text: 'Para provar os produtos, siga as orientações à seguir: ', imageUrl: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/162.jpg' },
     { id: 2, text: 'A parte do seu corpo que irá "provar" o produto deve estar totalmente dentro da imagem da câmera.', imageUrl: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/62333.jpg' },
     { id: 3, text: 'O usuário deve estar com roupas leves e finas, ex: camisa básica.', imageUrl: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/11414.jpg' },
     { id: 4, text: 'Não deve ter mais de uma pessoa dentro da imagem da câmera.', imageUrl: 'https://raw.githubusercontent.com/ViniciusOkaeda/u-commerce/refs/heads/main/src/Assets/11167.jpg' },

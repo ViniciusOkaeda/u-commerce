@@ -64,7 +64,7 @@
         {
             "products_id": 2,
             "products_name": "Jaqueta Jeans",
-            "products_description": "",
+            "products_description": "Transforme seu look com a nossa Jaqueta Jeans Clássica, um item essencial que combina com tudo e nunca sai de moda. Confeccionada com materiais de alta qualidade e um design moderno, ela oferece o equilíbrio perfeito entre conforto, durabilidade e estilo.",
             "products_price": "179,99",
             "products_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jeans_destaque.png",
             "products_category": 2,
@@ -82,14 +82,14 @@
             ],
             "images": [
                 {
-                    "images_url": "sueter1"
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jeans_destaque.png"
                 }
             ]
         },
         {
             "products_id": 3,
             "products_name": "Jaqueta Sweet",
-            "products_description": "",
+            "products_description": "A Jaqueta Sweet Comfort & Style é a escolha perfeita para quem busca praticidade, conforto e estilo, sem abrir mão da qualidade. Ideal para os dias mais frios ou para um visual casual e descomplicado, ela vai se tornar sua favorita para qualquer ocasião.",
             "products_price": "129,99",
             "products_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jaqueta_destaque.png",
             "products_category": 2,
@@ -107,14 +107,14 @@
             ],
             "images": [
                 {
-                    "images_url": "sueter1"
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jaqueta_destaque.png"
                 }
             ]
         },
         {
             "products_id": 4,
             "products_name": "Jaqueta Couro",
-            "products_description": "",
+            "products_description": "A Jaqueta de Couro Premium é a escolha definitiva para quem deseja um visual sofisticado e cheio de personalidade. Com um design arrojado e detalhes que fazem toda a diferença, esta jaqueta traz um toque de elegância e estilo a qualquer look, além de ser um investimento em durabilidade e versatilidade.",
             "products_price": "229,99",
             "products_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jaqueta_destaque3.png",
             "products_category": 2,
@@ -132,14 +132,14 @@
             ],
             "images": [
                 {
-                    "images_url": "sueter1"
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jaqueta_destaque3.png"
                 }
             ]
         },
         {
             "products_id": 5,
             "products_name": "Suéter Classic",
-            "products_description": "",
+            "products_description": "O Suéter Classic é a peça-chave para quem busca conforto, elegância e versatilidade em um único item. Ideal para dias mais frescos ou para compor um look sofisticado no inverno, este suéter é uma opção clássica e atemporal que nunca sai de moda.",
             "products_price": "99,99",
             "products_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/sueter_destaque2.png",
             "products_category": 2,
@@ -157,14 +157,14 @@
             ],
             "images": [
                 {
-                    "images_url": "sueter1"
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/sueter_destaque2.png"
                 }
             ]
         },
         {
             "products_id": 6,
             "products_name": "Blazer Feminino",
-            "products_description": "",
+            "products_description": "O Blazer Feminino Elegance é a peça essencial para quem deseja adicionar um toque de sofisticação e confiança ao seu guarda-roupa. Com um design impecável e corte moderno, esse blazer combina a elegância atemporal com a praticidade de um item versátil, perfeito para diversas ocasiões, do ambiente de trabalho a um jantar especial.",
             "products_price": "179,99",
             "products_image": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jaqueta_destaque2.png",
             "products_category": 2,
@@ -182,7 +182,7 @@
             ],
             "images": [
                 {
-                    "images_url": "sueter1"
+                    "images_url": "https://raw.githubusercontent.com/ViniciusOkaeda/e-commerce-ra-mobile/refs/heads/main/src/Assets/jaqueta_destaque2.png"
                 }
             ]
         }
