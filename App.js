@@ -7,6 +7,7 @@ import FavoriteScreen from './src/Screens/Favorite/favorite';
 import ProductScreen from './src/Screens/Product/product';
 import ProductsByCategory from './src/Screens/Category/Products/products';
 import ARSceneEcommerce from './src/Screens/ARScene/ars';
+import InfoScreen from './src/Screens/Info/info';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 
@@ -29,7 +30,7 @@ const stackScreenOptions = {
 export default function App() {
   return (
     <NavigationContainer>
-      <StatusBar barStyle="light-content" backgroundColor="#007bff" />
+      <StatusBar barStyle="light-content" backgroundColor="#628DB4" />
       <Tab.Navigator
         screenOptions={{ 
           headerShown: false, 
@@ -52,6 +53,7 @@ export default function App() {
               <HomeStack.Screen name="Detalhes do Produto" 
               component={ProductScreen}  />
               <HomeStack.Screen name="Experimente seu Produto" component={ARSceneEcommerce} />
+              <HomeStack.Screen name="Info Produto" component={InfoScreen} />
             </HomeStack.Navigator>
           )}
         </Tab.Screen>
@@ -79,6 +81,8 @@ export default function App() {
               />
               <CategoryStack.Screen name="Experimente seu Produto" component={ARSceneEcommerce} 
               />
+              <CategoryStack.Screen name="Info Produto" component={InfoScreen} />
+
             </CategoryStack.Navigator>
           )}
         </Tab.Screen>

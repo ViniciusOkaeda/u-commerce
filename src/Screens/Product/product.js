@@ -91,7 +91,7 @@ const ProductScreen = ({ route, navigation }) => {
             <View style={styles.tryProductContainer}>
               <TouchableOpacity style={styles.tryProductButton}
                 onPress={() => {
-                  navigation.navigate('Experimente seu Produto', { itemId: item.products_id, categoryItemId: item.products_category })
+                  navigation.navigate('Info Produto', { itemId: item.products_id, categoryItemId: item.products_category })
                 }}
               >
                 <Text style={styles.tryProductText}>Provar Produto</Text>
